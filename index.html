@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camen Ho - Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-pink': '#F8BBD9',
+                        'primary-blue': '#A8E6CF',
+                        'accent-pink': '#E91E63',
+                        'accent-blue': '#2196F3',
+                        'light-pink': '#FCE4EC',
+                        'light-blue': '#E3F2FD',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #F8BBD9 0%, #A8E6CF 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .skill-badge {
+            background: linear-gradient(45deg, #E91E63, #2196F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(233, 30, 99, 0.3);
+        }
+    </style>
+<script src="https://puc.poecdn.net/authenticated_preview_page/syncedState.bd4eeeb8e8e02052ee92.js"></script></head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold gradient-bg bg-clip-text text-transparent">Camen Ho 📊</h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-accent-pink transition-colors">About</a>
+                    <a href="#skills" class="hover:text-accent-blue transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-accent-pink transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-accent-blue transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 gradient-bg min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center">
+                <div class="mb-8">
+                    <div class="w-32 h-32 mx-auto bg-white rounded-full flex items-center justify-center text-6xl shadow-lg glow-effect">
+                        👩‍💻
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                    Hi, I'm Camen! 🇭🇰
+                </h1>
+                <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+                    Data Analyst from Hong Kong passionate about finding patterns in data and turning insights into action 📈
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="window.location.href='#projects'" class="bg-white text-accent-pink px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all card-hover">
+                        View My Work 🚀
+                    </button>
+                    <button onclick="window.location.href='#contact'" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-accent-blue transition-all">
+                        Let's Connect 💼
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">About Me 🌟</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="bg-light-pink dark:bg-gray-700 p-8 rounded-2xl card-hover">
+                        <h3 class="text-2xl font-semibold mb-4 text-accent-pink">Data Enthusiast 📊</h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            I'm Camen, a passionate Data Analyst from Hong Kong. I excel at finding patterns in data and communicating insights effectively. Currently actively seeking new opportunities to make an impact with data-driven decisions.
+                        </p>
+                    </div>
+                    <div class="bg-light-blue dark:bg-gray-700 p-8 rounded-2xl card-hover">
+                        <h3 class="text-2xl font-semibold mb-4 text-accent-blue">Problem Solver 🧩</h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            I love diving deep into complex datasets to uncover hidden insights. My strength lies in bridging the gap between technical analysis and business understanding.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-primary-pink to-primary-blue p-8 rounded-2xl text-center card-hover">
+                    <h3 class="text-2xl font-semibold text-white mb-6">My Hobbies 🎯</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white/20 backdrop-blur p-4 rounded-xl">
+                            <div class="text-3xl mb-2">🎵</div>
+                            <p class="text-white font-medium">Listening to Music</p>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur p-4 rounded-xl">
+                            <div class="text-3xl mb-2">🎧</div>
+                            <p class="text-white font-medium">Podcasts</p>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur p-4 rounded-xl">
+                            <div class="text-3xl mb-2">🎮</div>
+                            <p class="text-white font-medium">Playing Games</p>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur p-4 rounded-xl">
+                            <div class="text-3xl mb-2">📺</div>
+                            <p class="text-white font-medium">YouTube</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">My Skills 🛠️</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl text-center card-hover border-2 border-transparent hover:border-accent-pink">
+                    <div class="text-5xl mb-4">🐍</div>
+                    <h3 class="text-2xl font-semibold skill-badge mb-2">Python</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Data analysis, automation, and visualization</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl text-center card-hover border-2 border-transparent hover:border-accent-blue">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h3 class="text-2xl font-semibold skill-badge mb-2">Excel</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Advanced formulas, pivot tables, and data modeling</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl text-center card-hover border-2 border-transparent hover:border-accent-pink">
+                    <div class="text-5xl mb-4">📈</div>
+                    <h3 class="text-2xl font-semibold skill-badge mb-2">Power BI</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Interactive dashboards and business intelligence</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl text-center card-hover border-2 border-transparent hover:border-accent-blue">
+                    <div class="text-5xl mb-4">🗃️</div>
+                    <h3 class="text-2xl font-semibold skill-badge mb-2">SQL</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Database querying and data manipulation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">My Projects 🚀</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gradient-to-br from-light-pink to-white dark:from-gray-700 dark:to-gray-600 p-8 rounded-2xl card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="text-4xl mr-4">🎵</div>
+                        <h3 class="text-2xl font-semibold text-accent-pink">Spotify Streaming Analysis</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Analyzed Spotify streaming data using Python to identify music trends, user preferences, and seasonal patterns. Used pandas, matplotlib, and seaborn for comprehensive data visualization.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-accent-pink/20 text-accent-pink px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        <span class="bg-accent-pink/20 text-accent-pink px-3 py-1 rounded-full text-sm font-medium">Pandas</span>
+                        <span class="bg-accent-pink/20 text-accent-pink px-3 py-1 rounded-full text-sm font-medium">Data Viz</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-light-blue to-white dark:from-gray-700 dark:to-gray-600 p-8 rounded-2xl card-hover">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center">
+                            <div class="text-4xl mr-4">🌍</div>
+                            <h3 class="text-2xl font-semibold text-accent-blue">Weather Data Analysis</h3>
+                        </div>
+                        <a href="https://github.com/Camen-beep/Weather-DataAnalysis" target="_blank" rel="noopener noreferrer" class="text-accent-blue hover:text-accent-pink transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Used the METEO API to collect weather data in Hong Kong and analyzed temperature patterns to understand climate change trends. Created comprehensive visualizations using Python and Jupyter Notebook to communicate environmental insights.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-accent-blue/20 text-accent-blue px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        <span class="bg-accent-blue/20 text-accent-blue px-3 py-1 rounded-full text-sm font-medium">METEO API</span>
+                        <span class="bg-accent-blue/20 text-accent-blue px-3 py-1 rounded-full text-sm font-medium">Jupyter Notebook</span>
+                        <span class="bg-accent-blue/20 text-accent-blue px-3 py-1 rounded-full text-sm font-medium">Climate Data</span>
+                    </div>
+                    <a href="https://github.com/Camen-beep/Weather-DataAnalysis" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-accent-blue hover:text-accent-pink transition-colors font-medium">
+                        <span>View on GitHub</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-white mb-8">Let's Connect! 🤝</h2>
+            <p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
+                I'm actively looking for new opportunities in data analytics. Let's discuss how I can help turn your data into actionable insights! 💡
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <a href="mailto:howingyee215@gmail.com" class="bg-white/20 backdrop-blur p-8 rounded-2xl card-hover border-2 border-white/30 hover:bg-white hover:text-accent-pink transition-all group">
+                    <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">📧</div>
+                    <h3 class="text-2xl font-semibold text-white group-hover:text-accent-pink mb-2">Email Me</h3>
+                    <p class="text-white/80 group-hover:text-gray-600">howingyee215@gmail.com</p>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/camen-ho" target="_blank" rel="noopener noreferrer" class="bg-white/20 backdrop-blur p-8 rounded-2xl card-hover border-2 border-white/30 hover:bg-white hover:text-accent-blue transition-all group">
+                    <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">💼</div>
+                    <h3 class="text-2xl font-semibold text-white group-hover:text-accent-blue mb-2">LinkedIn</h3>
+                    <p class="text-white/80 group-hover:text-gray-600">Connect with me professionally</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-400">© 2024 Camen Ho - Data Analyst Portfolio | Made with 💖 and lots of ☕</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode support
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add subtle scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards for animation
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+
+
+</body></html>
